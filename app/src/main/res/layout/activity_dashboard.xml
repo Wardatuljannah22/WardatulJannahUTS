@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/gh"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Data Penduduk"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/nama_penduduk"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Penduduk"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/ttl"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tempat, Tanggal Lahir"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/nomor_hp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Handphone"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/alamat_penduduk"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Penduduk"
+        android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#C000BFFF"
+            android:fontFamily="sans-serif-black"
+            android:text="ADD"
+            android:textStyle="bold"
+            />
+
+<!--    <Button-->
+<!--        android:id="@+id/btnAdd"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#C000BFFF"-->
+<!--        android:text="TAMBAH DATA"-->
+<!--        android:fontFamily="sans-serif-black"/>-->
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4000BFFF"
+        android:fontFamily="sans-serif-black"
+        android:text="LOG OUT" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#C000BFFF"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="10dp"
+        />
+
+    </LinearLayout>
+</LinearLayout>
